@@ -20,7 +20,7 @@ jobs:
         GITHUB_SHA: ${{ github.sha }}
       run: |
         cd $GITHUB_WORKSPACE/
-        git clone https://github.com/Azure/InnovationEngine/tree/ParserAndExecutor
+        git clone -b ParserAndExecutor https://github.com/Azure/InnovationEngine.git
         cd InnovationEngine
         pip3 install -r requirements.txt
         python3 main.py test test
